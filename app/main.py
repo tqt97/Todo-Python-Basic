@@ -47,11 +47,3 @@ def delete(todo_id):
     db.session.delete(todo)
     db.session.commit()
     return redirect(url_for("index"))
-
-
-if __name__ == "__main__":
-    db.create_all()
-    # new_todo = Todo(title="todo 1", complete=False)
-    # db.session.add(new_todo)
-    # db.session.commit()
-    app.run(debug=True)
